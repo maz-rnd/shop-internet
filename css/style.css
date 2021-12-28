@@ -1,0 +1,133 @@
+:root {
+    --balck: #222222;
+    --pink-bkg: #F1E4E6;
+    --pink-color: #F09BA7;
+
+}
+
+.body {
+    font-family: 'lato';
+    font-style: italic;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.header__nav {
+    display: none;
+}
+
+.header {
+    background: var(--balck);
+    min-height: 75px;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+}
+
+.header__logo-form-wrp {
+    display: flex;
+}
+
+.header__search {
+    margin: 0 0 0 41px;
+}
+
+
+.header__menu-btn {
+    border: 1px solid;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: var(--pink-bkg);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+}
+
+.brand__title {
+font-size: 48px;
+font-weight: 900;
+line-height: 58px;
+text-transform: uppercase;
+}
+
+.brand__subtitle {
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 38px;
+display: block;
+}
+
+.brand__subtitle-pink {
+    color: var(--pink-color);
+}
+
+.sales__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+.sales__item--women {
+    background-image: url(../img/for_women.jpg);
+}
+
+.sales__item--men {
+    background-image: url(../img/for_men.jpg);
+}
+
+.sales__item--kids {
+    background-image: url(../img/for_kids.jpg);
+}
+
+.sales__item--shoes {
+    background-image: url(../img/accesories.jpg);
+    width: 100%;
+}
+
+
+
