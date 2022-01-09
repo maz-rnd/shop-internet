@@ -85,19 +85,19 @@
         <section class="sales container">
             <h2 class="visually-hidden">sales</h2>
             <ul class="sales__list">
-                <li class="sales__item sales__item_women">
+                <li class="sales__item sales__item-women">
                     <p class="sales__item-text">30% off</p>
                     <h3 class="sales__item-title">for women</h3>
                 </li>
-                <li class="sales__item sales__item_men">
+                <li class="sales__item sales__item-men">
                     <p class="sales__item-text">hot deal</p>
                     <h3 class="sales__item-title">for men</h3>
                 </li>
-                <li class="sales__item sales__item_kids">
+                <li class="sales__item sales__item-kids">
                     <p class="sales__item-text">new arrivals</p>
                     <h3 class="sales__item-title">for kids</h3>
                 </li>
-                <li class="sales__item sales__item_shoes">
+                <li class="sales__item sales__item-shoes">
                     <p class="sales__item-text">luxirous & trendy</p>
                     <h3 class="sales__item-title">accesories</h3>
                 </li>
@@ -178,35 +178,54 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <img src="./img/women-footer.svg" alt="women-footer">
-        <blockquote>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</blockquote>
-        <h3>subscribe</h3>
-        <p>for our newletter and promotion</p>
-        <div>форма</div>
-        <p>© 2021 Brand All Rights Reserved.</p>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="./img/facebook-icon.svg" alt="facebook-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/instagram-icon.svg" alt="instagram-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/pinterest-icon.svg" alt="pinterest-icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./img/twitter-icon.svg" alt="twitter-icon">
-                </a>
-            </li>
-        </ul>
+    <footer class="footer">
+        <div class="footer__bkg">
+            <div class="footer__up container">
+                <div class="footer__person">
+                    <img class="footer__img" src="./img/women-footer.svg" alt="women-footer">
+                    <blockquote class="footer__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                        pulvinar
+                        purus
+                        condimentum“</blockquote>
+                </div>
+                <div class="footer__info">
+                    <h3 class="footer__info-title">subscribe</h3>
+                    <p class="footer__info-text">for our newletter and promotion</p>
+                    <div class="footer__form">
+                        <input class="footer__form-mail" id="mail" type="email" required placeholder="Enter Your Email">
+                        <label class="visually-hidden" for="mail">mail</label>
+                        <button class="footer__form-btn" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__band">
+            <div class="container footer__wrp">
+                <p class="footer__text-rights">© 2021 Brand All Rights Reserved.</p>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">
+                            <img class="footer__item-img" src="./img/facebook-icon.svg" alt="facebook-icon">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">
+                            <img class="footer__item-img" src="./img/instagram-icon.svg" alt="instagram-icon">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">
+                            <img class="footer__item-img" src="./img/pinterest-icon.svg" alt="pinterest-icon">
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item-link" href="#">
+                            <img class="footer__item-img" src="./img/twitter-icon.svg" alt="twitter-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
 </body>
