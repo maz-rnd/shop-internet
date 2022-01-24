@@ -8,6 +8,7 @@
     --gray-color-text: #5D5D5D;
     --white-service-text: #FBFBFB;
     --dark-pink: #F16D7F;
+    --white-bkg: #FFFFFF;
 }
 
 .body {
@@ -37,11 +38,62 @@
 
 .header__nav {
     display: none;
+    position: absolute;
+    top: 75px;
+    width: 323px;
+    height: 764px;
+    right: 0;
+    background: var(--white-bkg);
+    z-index: 1;
+    border: 1px solid rgb(202, 141, 27);
+}
+
+.header__nav-title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black-color);
+    text-transform: uppercase;
+    margin: 37px 0 10px 34px;
+}
+
+.nav-sub-item__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 17px;
+    color: var(--dark-pink);
+    padding: 12px 0 11px 33px;
+}
+
+.nav-sub-item__list {
+    padding: 11px 0 11px 20px;
+}
+
+.header__menu-btn :hover,
+.header__menu-btn :focus {
+    fill: red;
+}
+
+.header__menu-btn:hover + .header__nav,
+.header__menu-btn:focus + .header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
 }
 
 .header {
     background: var(--black);
     min-height: 75px;
+    position: relative;
 }
 
 .header__wrp {
@@ -92,16 +144,6 @@
 .header__menu-btn {
     border: none;
     background-color: transparent;
-}
-
-.header__menu-btn :hover,
-.header__menu-btn :focus {
-    fill: red;
-}
-
-.header__menu-btn:active {
-    opacity: 50%;
-    outline: 1px solid azure;
 }
 
 .brand {
@@ -470,10 +512,6 @@ display: block;
     margin: 150px 0 0 0;
 }
 
-.footer__form {
-
-}
-
 .footer__band {
     height: 79px;
     background: var(--black);
@@ -486,8 +524,6 @@ display: block;
     font-size: 16px;
     line-height: 19px;
     color: var(--white-service-text);
-
-    
 }
 
 .footer__wrp {
