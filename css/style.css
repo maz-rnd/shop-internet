@@ -116,6 +116,7 @@
     text-decoration: none;
     margin: 0 0 0 33px;
     display: inline-block;
+    border: 1px solid var(--black);
 }
 
 .header__link:focus,
@@ -578,7 +579,7 @@ display: block;
 
 .footer__form-mail:hover,
 .footer__form-mail:focus {
-    border: 1px solid red;
+    outline: 1px solid red;
 }
 
 .footer__form-btn {
